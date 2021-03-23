@@ -1,25 +1,16 @@
-import java.util.*;
 public class Armstrong_Number
 {
-    public static void main()
+    public boolean armstrong_check(int n)
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        int n=sc.nextInt();
-        int i=0,a=n,b=n,s=0;
-        while(a>0)
-        {
-            a=a/10;
-            i++;
-        }
+        Functions ob1 = new Functions();
+        int i=ob1.number_of_digits(n),b=n,s=0;
         while(b>0)
         {
             s=s+(int)Math.pow(b%10,i);
             b/=10;
         }
         if(s==n)
-        System.out.println("Armstrong number!");
-        else
-        System.out.println("Not an Armstrong number!");
+            return true;
+        return false;
     }
 }
