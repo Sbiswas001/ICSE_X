@@ -10,7 +10,7 @@ public class Functions
     }
     public int reverse(int n)
     {
-        int sum=0, r=0;
+        int sum=0, r=0; 
         while(n>0)
         {    
             r=n%10; 
