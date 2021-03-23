@@ -5,6 +5,6 @@ public class Palindrome_Number
         Functions ob = new Functions();
         if(n==ob.reverse(n))    
         return true;  
-        return false;   
+        return false;  
     }  
 }  

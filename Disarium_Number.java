@@ -10,7 +10,7 @@ public class Disarium_Number
             rem = a%10;  
             sum = sum + (int)Math.pow(rem,len);  
             a = a/10;  
-            len--;  
+            len--;
         }
         if(sum==n)
             return true;

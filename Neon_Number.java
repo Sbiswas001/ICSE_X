@@ -1,11 +1,7 @@
-import java.util.*;
 public class Neon_Number
 {
-    public static void main()
+    public boolean neon_check(int n)
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        int n=sc.nextInt();
         int a=n*n,s=0;
         while(a>0)
         {
@@ -13,8 +9,7 @@ public class Neon_Number
             a/=10;
         }
         if(s==n)
-        System.out.println("Neon number!");
-        else
-        System.out.println("Not a Neon number!");
+            return true;
+        return false;
     }
 }
