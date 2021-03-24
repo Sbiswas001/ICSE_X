@@ -2,7 +2,7 @@ public class Search
 {
     public int find_int(int a[], int x)
     {
-        int temp=0, i;
+        int temp = 0, i;
         int n=a.length;
         for(i=0;i<n;i++)
         {
