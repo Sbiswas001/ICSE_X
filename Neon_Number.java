@@ -2,13 +2,8 @@ public class Neon_Number
 {
     public boolean neon_check(int n)
     {
-        int a=n*n,s=0;
-        while(a>0)
-        {
-            s+=a%10;
-            a/=10;
-        }
-        if(s==n)
+        Functions ob = new Functions();
+        if(n==ob.digit_sum(n*n))
             return true;
         return false;
     }

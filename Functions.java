@@ -39,6 +39,17 @@ public class Functions
         }
         return sum;
     }
+    public int digit_product(int n)
+    {
+        int product=1, r=0;
+        while(n>0)
+        {    
+            r=n%10; 
+            product*=r;    
+            n=n/10;    
+        }
+        return product;
+    }
     public int number_of_digits(int n)
     {
         int length = 0;  
@@ -217,6 +228,17 @@ public class Functions
             n=n/10;    
         }
         return sum;
+    }
+    public long digit_product(long n)
+    {
+        long product=1, r=0;
+        while(n>0)
+        {    
+            r=n%10; 
+            product*=r;    
+            n=n/10;    
+        }
+        return product;
     }
     public long number_of_digits(long n)
     {
