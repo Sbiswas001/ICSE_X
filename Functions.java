@@ -60,6 +60,15 @@ public class Functions
         }  
         return length;
     }
+    public boolean array_search(int a[], int x)
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            if(x==a[i])
+            return true;
+        }
+        return false;
+    }
     public int[] digit_array(int a)
     {
         int x[] = new int[number_of_digits(a)];
@@ -208,6 +217,15 @@ public class Functions
             n=n/10;    
         }
         return sum;
+    }
+    public boolean array_search(long a[], long x)
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            if(x==a[i])
+            return true;
+        }
+        return false;
     }
     public long array_sum(long a[])
     {
