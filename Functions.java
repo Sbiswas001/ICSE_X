@@ -1,4 +1,6 @@
 import java.util.*;
+import java.math.BigInteger;
+
 public class Functions
 {
     public int factorial(int a)
@@ -52,13 +54,7 @@ public class Functions
     }
     public int number_of_digits(int n)
     {
-        int length = 0;  
-        while(n != 0)
-        {  
-            length++;  
-            n = n/10;  
-        }  
-        return length;
+        return (int)Math.floor(Math.log10(n))+1;
     }
     public boolean array_search(int a[], int x)
     {
@@ -260,13 +256,7 @@ public class Functions
     }
     public long number_of_digits(long n)
     {
-        long length = 0;  
-        while(n != 0)
-        {  
-            length++;  
-            n = n/10;  
-        }  
-        return length;
+        return (long)Math.floor(Math.log10(n))+1;
     }
     public long[] digit_array(long a)
     {
@@ -394,5 +384,19 @@ public class Functions
             }
         }
         return a;  
+    }
+    
+    
+    public BigInteger reverse(BigInteger n)
+    {
+        BigInteger sum = new BigInteger("0");
+        BigInteger r = new BigInteger("0");
+        while(n.compareTo(BigInteger.ZERO)>0)
+        {    
+            r=n.mod(BigInteger.TEN); 
+            sum=(sum.multiply(BigInteger.TEN)).add(r);    
+            n=n.divide(BigInteger.TEN);    
+        }
+        return sum;
     }
 }
