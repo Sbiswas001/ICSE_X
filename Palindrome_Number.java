@@ -19,7 +19,7 @@ public class Palindrome_Number
     public boolean palindrome_check(BigInteger n)
     {  
         Functions ob = new Functions();
-        if(n==ob.reverse(n))    
+        if(n.equals(ob.reverse(n)))    
         return true;  
         return false;  
     }  
