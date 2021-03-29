@@ -1,6 +1,6 @@
 public class Automorphic_Number
 {
-    public boolean automorphic_check(int num)
+    public static boolean automorphic_check(int num)
     {
         int square = num * num;   
         while (num > 0)   

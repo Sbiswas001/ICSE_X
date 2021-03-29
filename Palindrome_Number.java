@@ -2,24 +2,21 @@ import java.math.BigInteger;
 
 public class Palindrome_Number
 { 
-    public boolean palindrome_check(int n)
+    public static boolean palindrome_check(int n)
     {  
-        Functions ob = new Functions();
-        if(n==ob.reverse(n))    
+        if(n==Functions.reverse(n))    
         return true;  
         return false;  
     }  
-    public boolean palindrome_check(long n)
+    public static boolean palindrome_check(long n)
     {  
-        Functions ob = new Functions();
-        if(n==ob.reverse(n))    
+        if(n==Functions.reverse(n))    
         return true;  
         return false;  
     }  
-    public boolean palindrome_check(BigInteger n)
+    public static boolean palindrome_check(BigInteger n)
     {  
-        Functions ob = new Functions();
-        if(n.equals(ob.reverse(n)))    
+        if(n.equals(Functions.reverse(n)))    
         return true;  
         return false;  
     }  

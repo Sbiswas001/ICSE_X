@@ -1,6 +1,6 @@
 public class Prime_Number
 {
-    public boolean prime_check(int a)
+    public static boolean prime_check(int a)
     {
         int flag=0;
         if(a<2) return false;

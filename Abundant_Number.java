@@ -1,9 +1,8 @@
 public class Abundant_Number
 {
-    public boolean abandunt_check(int n)
+    public static boolean abundant_check(int n)
     {
-        Functions ob = new Functions();
-        if(n<ob.array_sum(ob.factors(n))-n)
+        if(n<Functions.array_sum(Functions.factors(n))-n)
             return true;
         return false;
     }

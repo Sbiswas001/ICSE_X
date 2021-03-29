@@ -3,14 +3,14 @@ import java.math.BigInteger;
 
 public class Functions
 {
-    public int factorial(int a)
+    public static int factorial(int a)
     {
         int p=1;
         for(int i=1;i<=a;i++)
         p*=i;
         return p;
     }
-    public int reverse(int n)
+    public static int reverse(int n)
     {
         int sum=0, r=0; 
         while(n>0)
@@ -21,7 +21,7 @@ public class Functions
         }
         return sum;
     }
-    public int array_sum(int a[])
+    public static int array_sum(int a[])
     {
         int n=a.length, sum=0;
         for(int i=0;i<n;i++)
@@ -30,7 +30,7 @@ public class Functions
         }
         return sum;
     }
-    public int digit_sum(int n)
+    public static int digit_sum(int n)
     {
         int sum=0, r=0;
         while(n>0)
@@ -41,7 +41,7 @@ public class Functions
         }
         return sum;
     }
-    public int digit_product(int n)
+    public static int digit_product(int n)
     {
         int product=1, r=0;
         while(n>0)
@@ -52,11 +52,11 @@ public class Functions
         }
         return product;
     }
-    public int number_of_digits(int n)
+    public static int number_of_digits(int n)
     {
         return (int)Math.floor(Math.log10(n))+1;
     }
-    public boolean array_search(int a[], int x)
+    public static boolean array_search(int a[], int x)
     {
         for(int i=0;i<a.length;i++)
         {
@@ -65,7 +65,7 @@ public class Functions
         }
         return false;
     }
-    public int[] digit_array(int a)
+    public static int[] digit_array(int a)
     {
         int x[] = new int[number_of_digits(a)];
         int num=reverse(a);
@@ -76,7 +76,7 @@ public class Functions
         }
         return x;
     }
-    public int no_of_factors(int n)
+    public static int no_of_factors(int n)
     {
         int count=1;
         if(n>=2)
@@ -91,7 +91,7 @@ public class Functions
         }
         return count;
     }
-    public int[] factors(int n)
+    public static int[] factors(int n)
     {
         int l=1;
         int num[] = new int[no_of_factors(n)];
@@ -109,7 +109,7 @@ public class Functions
         }
         return num;
     }
-    public int no_of_pfactors(int n)
+    public static int no_of_pfactors(int n)
     {
         int count=0;
         Prime_Number ob1 = new Prime_Number();
@@ -129,7 +129,7 @@ public class Functions
         }
         return count;
     }
-    public int[] prime_factors(int n)
+    public static int[] prime_factors(int n)
     {
         int l=0;
         Prime_Number ob1 = new Prime_Number();
@@ -151,12 +151,12 @@ public class Functions
         }
         return num;
     }
-    public boolean isPerfectSquare(int x)
+    public static boolean isPerfectSquare(int x)
     {
         int s = (int) Math.sqrt(x);
         return (s*s == x);
     }
-    public int[] asort_int(int a[])
+    public static int[] asort_int(int a[])
     {
         int temp=0;
         int n=a.length;
@@ -174,7 +174,7 @@ public class Functions
         }
         return a;  
     }
-    public int[] dsort_int(int a[])
+    public static int[] dsort_int(int a[])
     {
         int temp=0;
         int n=a.length;
@@ -196,14 +196,14 @@ public class Functions
     
     
     
-    public long factorial(long a)
+    public static long factorial(long a)
     {
         long p=1;
         for(long i=1;i<=a;i++)
         p*=i;
         return p;
     }
-    public long reverse(long n)
+    public static long reverse(long n)
     {
         long sum=0, r=0; 
         while(n>0)
@@ -214,7 +214,7 @@ public class Functions
         }
         return sum;
     }
-    public boolean array_search(long a[], long x)
+    public static boolean array_search(long a[], long x)
     {
         for(int i=0;i<a.length;i++)
         {
@@ -223,7 +223,7 @@ public class Functions
         }
         return false;
     }
-    public long array_sum(long a[])
+    public static long array_sum(long a[])
     {
         long n=a.length, sum=0;
         for(long i=0;i<n;i++)
@@ -232,7 +232,7 @@ public class Functions
         }
         return sum;
     }
-    public long digit_sum(long n)
+    public static long digit_sum(long n)
     {
         long sum=0, r=0;
         while(n>0)
@@ -243,7 +243,7 @@ public class Functions
         }
         return sum;
     }
-    public long digit_product(long n)
+    public static long digit_product(long n)
     {
         long product=1, r=0;
         while(n>0)
@@ -254,11 +254,11 @@ public class Functions
         }
         return product;
     }
-    public long number_of_digits(long n)
+    public static long number_of_digits(long n)
     {
         return (long)Math.floor(Math.log10(n))+1;
     }
-    public long[] digit_array(long a)
+    public static long[] digit_array(long a)
     {
         long x[] = new long[(int)number_of_digits(a)];
         long num=reverse(a);
@@ -269,7 +269,7 @@ public class Functions
         }
         return x;
     }
-    public long no_of_factors(long n)
+    public static long no_of_factors(long n)
     {
         long count=1;
         if(n>=2)
@@ -284,7 +284,7 @@ public class Functions
         }
         return count;
     }
-    public long[] factors(long n)
+    public static long[] factors(long n)
     {
         long l=1;
         long num[] = new long[(int)no_of_factors(n)];
@@ -302,7 +302,7 @@ public class Functions
         }
         return num;
     }
-    public long no_of_pfactors(long n)
+    public static long no_of_pfactors(long n)
     {
         long count=0;
         Prime_Number ob1 = new Prime_Number();
@@ -322,7 +322,7 @@ public class Functions
         }
         return count;
     }
-    public long[] prime_factors(long n)
+    public static long[] prime_factors(long n)
     {
         long l=0;
         Prime_Number ob1 = new Prime_Number();
@@ -344,12 +344,12 @@ public class Functions
         }
         return num;
     }
-    public boolean isPerfectSquare(long x)
+    public static boolean isPerfectSquare(long x)
     {
         long s = (long) Math.sqrt(x);
         return (s*s == x);
     }
-    public long[] asort_long(long a[])
+    public static long[] asort_long(long a[])
     {
         long temp=0;
         long n=a.length;
@@ -367,7 +367,7 @@ public class Functions
         }
         return a;  
     }
-    public long[] dsort_long(long a[])
+    public static long[] dsort_long(long a[])
     {
         long temp=0;
         long n=a.length;
@@ -387,7 +387,7 @@ public class Functions
     }
     
     
-    public BigInteger reverse(BigInteger n)
+    public static BigInteger reverse(BigInteger n)
     {
         BigInteger sum = new BigInteger("0");
         BigInteger r = new BigInteger("0");

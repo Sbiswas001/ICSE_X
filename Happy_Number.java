@@ -1,6 +1,6 @@
 public class Happy_Number
 { 
-    public boolean happy_check(int n)
+    public static boolean happy_check(int n)
     {  
         long num=n, sum=0;
         do

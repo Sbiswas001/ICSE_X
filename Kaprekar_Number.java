@@ -1,11 +1,10 @@
 public class Kaprekar_Number
 {
-    public boolean kaprekar_check(int num)
+    public static boolean kaprekar_check(int num)
     {
-        Functions ob = new Functions();
         int n=num*num;
         int f=0,l=0,sum=0;
-        int count=ob.number_of_digits(n);
+        int count=Functions.number_of_digits(n);
         if(count%2==0)
         {
             f=n/(int)Math.pow(10,count/2);

@@ -1,6 +1,6 @@
 public class Pronic_Number
 {
-    public boolean pronic_check(int a)
+    public static boolean pronic_check(int a)
     {
         int k=0;
         for(int i=0;i<=a;i++)
