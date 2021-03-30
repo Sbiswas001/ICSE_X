@@ -112,12 +112,11 @@ public class Functions
     public static int no_of_pfactors(int n)
     {
         int count=0;
-        Prime_Number ob1 = new Prime_Number();
         if(n>=2)
         {
             for(int i=2;i<=n;i++)
             {
-                if(ob1.prime_check(i))
+                if(Number_Names.prime_check(i))
                 {
                     while(n%i==0)
                     {
@@ -132,13 +131,12 @@ public class Functions
     public static int[] prime_factors(int n)
     {
         int l=0;
-        Prime_Number ob1 = new Prime_Number();
         int num[] = new int[no_of_pfactors(n)];
         if(n>=2)
         {
             for(int i=2;i<=n;i++)
             {
-                if(ob1.prime_check(i))
+                if(Number_Names.prime_check(i))
                 {
                     while(n%i==0)
                     {
@@ -305,12 +303,11 @@ public class Functions
     public static long no_of_pfactors(long n)
     {
         long count=0;
-        Prime_Number ob1 = new Prime_Number();
         if(n>=2)
         {
             for(long i=2;i<=n;i++)
             {
-                if(ob1.prime_check((int)i))
+                if(Number_Names.prime_check((int)i))
                 {
                     while(n%i==0)
                     {
@@ -325,13 +322,12 @@ public class Functions
     public static long[] prime_factors(long n)
     {
         long l=0;
-        Prime_Number ob1 = new Prime_Number();
         long num[] = new long[(int)no_of_pfactors(n)];
         if(n>=2)
         {
             for(long i=2;i<=n;i++)
             {
-                if(ob1.prime_check((int)i))
+                if(Number_Names.prime_check((int)i))
                 {
                     while(n%i==0)
                     {
